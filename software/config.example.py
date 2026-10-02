@@ -1,0 +1,8 @@
+WIFI_SSID = "ime-mreze"
+WIFI_LOZINKA = "lozinka-mreze"
+
+MQTT_BROKER_ADRESA = "192.168.1.10"
+MQTT_BROKER_PORT = 1883
+MQTT_KORISNICKO_IME = ""
+MQTT_LOZINKA = ""
+MQTT_ID_KLIJENTA = "vucko_rover"
