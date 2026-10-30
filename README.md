@@ -1,29 +1,29 @@
-# "Vučko" — Autonomni ESP32 Mars Rover
+# "Vučko" — Autonomous ESP32 Mars Rover
 
-Autonomno mikrokontrolersko vozilo bazirano na ESP32 mikrokontroleru i MicroPythonu. Sistem koristi MQTT protokol za upravljanje i telemetriju, MPU6050 žiroskop za održavanje pravca, te MCP arhitekturu i Hermes Agenta na Raspberry Pi 5 za AI upravljanje putem prirodnog jezika.
-
----
-
-## Demo Video i Dokumentacija
-
-* **YouTube Video:** [Pogledajte demonstraciju rada rovera](https://youtu.be/92EGSl7-Scg)
-* **Dokumentacija:** Detaljan opis arhitekture i funkcionalnosti nalazi se u [`docs/dokumentacija projekta.pdf`](./docs/dokumentacija%20projekta.pdf)
+An autonomous microcontroller-based vehicle powered by an ESP32 microcontroller and MicroPython. The system utilizes the MQTT protocol for control and telemetry, an MPU6050 gyroscope for heading stabilization, and an MCP architecture running Hermes Agent on a Raspberry Pi 5 for natural language AI control.
 
 ---
 
-## Tehnologije i Komponente
+## Demo Video & Documentation
 
-* **Mikrokontroler:** ESP32 (MicroPython)
-* **Upravljanje (AI):** Raspberry Pi 5, MCP Server, Hermes Agent, Telegram Bot
-* **Komunikacija:** Wi-Fi, MQTT broker
-* **Pogon:** 4WD DC motori, L298N H-most drajver, SG90 servo motor
-* **Senzori:** MPU6050 (žiroskop za stabilizaciju), HC-SR04 (ultrasonični senzor za prepreke), DHT11 (temperatura i vlaga)
+- **YouTube Video:** [Watch the rover demonstration](https://youtu.be/92EGSl7-Scg)
+- **Documentation:** Detailed architecture and functionality description can be found in [`docs/dokumentacija projekta.pdf`](./docs/dokumentacija%20projekta.pdf)
 
 ---
 
-## Glavne Funkcionalnosti
+## Technologies & Components
 
-* **Stabilizacija pravca:** Automatska PWM korekcija brzine motora pomoću žiroskopa.
-* **Izbjegavanje prepreka:** Skeniranje terena ultrazvučnim senzorom.
-* **Mapiranje terena:** Generisanje 2D matrice temperature i vlage.
-* **Upravljanje prirodnim jezikom:** Izvršavanje komandi iz Telegram chata putem AI agenta.
+- **Microcontroller:** ESP32 (MicroPython)
+- **AI Control Layer:** Raspberry Pi 5, MCP Server, Hermes Agent, Telegram Bot
+- **Communication:** Wi-Fi, MQTT Broker
+- **Drive System:** 4WD DC motors, L298N H-bridge driver, SG90 servo motor
+- **Sensors:** MPU6050 (gyroscope for stabilization), HC-SR04 (ultrasonic obstacle sensor), DHT11 (temperature and humidity)
+
+---
+
+## Key Features
+
+- **Heading Stabilization:** Automatic PWM motor speed correction using gyroscope data.
+- **Obstacle Avoidance:** Terrain scanning via an ultrasonic sensor.
+- **Terrain Mapping:** Generation of a 2D temperature and humidity matrix.
+- **Natural Language Control:** Execution of commands from a Telegram chat via an AI agent.
